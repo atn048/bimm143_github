@@ -1,0 +1,40 @@
+---
+title: "Class 06 Function Homework"
+author: "Amy Nguyen (PID: A18148284)"
+format: pdf
+---
+
+# What is the function input? The function input is a character string that specifies the PDB ID of a specific protein structure.
+
+# What does the function do and how do we use it? The function reads a protein structure, trims the structure to chain A and alpha carbon atoms, extracts the B-factor values, and plots the B-factor along the protein sequence. It can be used to visualize B-factor variation along the protein sequence
+
+# What is the function output? The function output is a line plot of B-factor values for alpha carbon atons in chain A of the protein.
+
+```{r}
+library(bio3d)
+```
+
+```{r}
+
+# Name the function
+protein_analysis <- function(pdb_id) {
+
+  # Read the protein structure
+  pdb <- read.pdb(pdb_id)
+  
+  # Trim to specified chain A and alpha carbon atom 
+  pdb_chain <- trim.pdb(pdb, chain = "A", elety = "CA")
+  
+  # Extract B-factor
+  b_factors <- pdb_chain$atom$b 
+  
+  # Plot the B-factor
+  plotb3(b_factors, sse=pdb_chain, typ="l", ylab="Bfactor")
+  
+}
+```
+
+```{r}
+protein_analysis("4AKE")
+```
+
