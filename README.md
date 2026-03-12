@@ -23,19 +23,16 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 12 [Genome informatics]
 
-- Class 13 [Transcriptomics and the analysis of RNA-Seq data]
+- Class 13 [Transcriptomics and the analysis of RNA-Seq data](Class13/class-13.pdf)
 
-- Class 14 [RNA-Seq analysis mini-project]
+- Class 14 [RNA-Seq analysis mini-project](Class14/class_14.qmd)
 
-- Class 15 [Hands-on with Git and Github]
+- Class 15 [Hands-on with Git and Github] 
 
-- Class 16 [Essential UNIX for bioinformatics]
+- Class 16 [Essential UNIX for bioinformatics](
 
-- Class 17 [Analyzing sequencing data in the cloud]
+- Class 17 [Analyzing sequencing data in the cloud](class17/class17.pdf)
 
 - Class 18 [Mini Project: Investigating Pertussis Resurgence]
 
 - Class 19 [Mini Project: Cancer Mutation Analysis]
-- Class 15
-
-- Class 16 
