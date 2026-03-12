@@ -27,7 +27,7 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 14 [RNA-Seq analysis mini-project](Class14/class_14.qmd)
 
-- Class 15 [Hands-on with Git and Github] 
+- Class 15 [Hands-on with Git and Github](https://github.com/atn048/bimm143_github/tree/main)
 
 - Class 16 [Essential UNIX for bioinformatics](
 
