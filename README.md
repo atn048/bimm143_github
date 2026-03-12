@@ -4,11 +4,11 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 ## Index of Material
 
 *Introductory material*
-- Class 01
+- Class 01 [Welcome to Bioinformatics]
   
-- Class 02
+- Class 02 [Sequence alignment fundamentals, algorithms and applications]
   
-- Class 03
+- Class 03 [Advanced sequence alignment and database searching]
 
 - Class 04 [Intro to R]
 
