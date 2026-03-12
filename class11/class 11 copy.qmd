@@ -1,0 +1,35 @@
+---
+title: "Class 11"
+author: "Amy Nguyen (PID: A18148284)"
+format: html
+---
+
+## Background
+
+We saw last day that the main repository for biomolecular structure (the PDB database) only has ~250,000 entries.
+
+UniProtKB (the main protein sequence database) has over 200 million entries!
+
+## AlphaFold
+
+In this hands-on session we will utilize AlphaFold to predict protein structure from sequence (Jumper et al. 2021)
+
+Without the aid of such approaches it can take years of expensive laboratory work to detemrine the structure of just one protein. WIth AlphaFold we can now accurately compute a typical protein structure in as little as ten minutes.
+
+## The EBI ALphaFold database
+
+The EBI alphafold database contains lots of computed structure models. It is increasingly likely that the structure you are intrested in is already in this database. 
+
+There are 3 major outputs from AlphaFold
+
+1. A model of structure in **PDB** format
+2. a **pLDDT score**: that tells us how confident the model is for a given residue in your protein (High values are good, above 70)
+3. a **PAE score** that tells us about protein packing quality 
+
+If you can't find a matching entry for the sequence youy are intreste din AFDB you can run AlphaFold yourself... 
+
+## Running AlphaFold
+
+We will use AlphaFold
+
+## Interpreting Results 
