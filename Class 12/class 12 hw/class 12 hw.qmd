@@ -1,0 +1,56 @@
+---
+title: "Class 12 HW"
+author: "Amy Nguyen (PID: A18148284)"
+format: pdf
+---
+
+> Q13. Read this file into R and determine the sample size for each genotype and their corresponding median expression levels for each of these genotypes.
+Sample size for each genotype: A/A - 108, A/G - 233, G/G - 121
+Corresponding median expression levels: A/A - 31.25, A/G - 233, G/G - 121
+
+How many samples do we have?
+
+```{r}
+# Import data from file 
+expr <- read.table("rs8067378_ENSG00000172057.6.txt")
+head(expr)
+```
+
+```{r}
+nrow(expr)
+```
+
+```{r}
+# Find the sample size of each genotype 
+table(expr$geno)
+```
+
+```{r}
+# Looking at the five-number summary for each genotype
+summary(expr$exp[expr$geno == "A/A"])
+summary(expr$exp[expr$geno == "A/G"])
+summary(expr$exp[expr$geno == "G/G"])
+```
+```{r}
+# Find the median of each genotype
+geno_boxplot <- boxplot(expr$exp ~ expr$geno, plot = FALSE)
+geno_boxplot$stats[3, ]
+```
+
+Lets make a boxplot
+
+> Q14. Generate a boxplot with a box per genotype, what could you infer from the relative expression value between A/A and G/G displayed in this plot? Does the SNP effect the expression of ORMDL3? The boxplot shows that those with the A/A genotype have higher median ORMDL3 expression compared to those with the G/G genotype, while those with A/G are in the middle. This suggests that the SNP is associated with ORMDL3 expression levels, where the A allele increases expression. 
+
+Lets make a boxplot
+
+```{r}
+# Load ggplot
+library(ggplot2)
+```
+
+```{r}
+# Create a box plot from the given data 
+ggplot(expr) + aes(geno, exp, fill=geno) +
+  geom_boxplot(notch=TRUE)
+```
+

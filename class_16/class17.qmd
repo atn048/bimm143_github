@@ -1,0 +1,134 @@
+---
+title: "Class 17: Obtaining and processing SRA datasets on AWS"
+author: "Amy Nguyen: (PID: A18148284)"
+format: pdf
+---
+
+## Core Unix Commands
+
+Most Unix commands have super short names, which makes them quick to type but annoying to learn. Major file system related commands include:
+
+cd: Change directory
+
+pwd: Print working directory
+
+ls: List files and directories
+
+mkdir: Make a new directory
+
+rm: Delete files and directories
+
+cp: Copy files or dirs (source \> destination)
+
+mv: Move files or dirs (basically re-name)
+
+nano: A very basic text editor that is always available
+
+less: To view/read text files page by page (paper program)
+
+## AWS EC2 Instance
+
+My AWS instance: ssh -i "bioinf_amynguyen.pem" ubuntu\@ec2-54-187-195-168.us-west-2.compute.amazonaws.com
+
+To copy from my AWS instance: scp -i \~/Downloads/bioinf_amynguyen.pem ubuntu\@ec2-54-187-195-168.us-west-2.compute.amazonaws.com:\~/work/results.tsv .
+
+## Class 17 AWS instance address
+
+ssh -i "\~/Downloads/bioinf_amynguyen.pem" ubuntu\@ec2-35-94-26-238.us-west-2.compute.amazonaws.com
+
+tar -zxvf kallisto_linux-v0.44.0.tar.gz
+
+scp -r -i "\~/Downloads/bioinf_amynguyen.pem" ubuntu\@ec2-35-94-26-238.us-west-2.compute.amazonaws.com:\~/\*\_quant .
+
+## Downstream analysis
+
+```{r}
+library(tximport)
+
+# setup the folder and filenames to read
+folders <- dir(pattern="SRR21568*")
+samples <- sub("_quant", "", folders)
+files <- file.path( folders, "abundance.h5" )
+names(files) <- samples
+
+txi.kallisto <- tximport(files, type = "kallisto", txOut = TRUE)
+```
+
+```{r}
+head(txi.kallisto$counts)
+
+```
+
+```{r}
+colSums(txi.kallisto$counts)
+```
+
+```{r}
+sum(rowSums(txi.kallisto$counts)>0)
+```
+
+```{r}
+to.keep <- rowSums(txi.kallisto$counts) > 0
+kset.nonzero <- txi.kallisto$counts[to.keep,]
+```
+
+```{r}
+keep2 <- apply(kset.nonzero,1,sd)>0
+x <- kset.nonzero[keep2,]
+```
+
+## Principal Component Analysis
+
+```{r}
+pca <- prcomp(t(x), scale=TRUE)
+```
+
+```{r}
+summary(pca)
+```
+
+```{r}
+plot(pca$x[,1], pca$x[,2],
+     col=c("blue","blue","red","red"),
+     xlab="PC1", ylab="PC2", pch=16)
+```
+
+Q. Use ggplot to make a similar figure of PC1 vs PC2 and a separate figure PC1 vs PC3 and PC2 vs PC3.
+
+x
+
+```{r}
+library(ggplot2)
+library(ggrepel)
+
+mycols <- c("blue","blue","red","red")
+
+ggplot(pca$x) +
+  aes(PC1, PC2, label=rownames(pca$x)) +
+  geom_point( col=mycols ) +
+  geom_text_repel( col=mycols ) +
+  theme_bw()
+```
+
+## OPTIONAL: Differential-expression analysis
+
+```{r}
+library(DESeq2)
+
+sampleTable <- data.frame(condition = factor(rep(c("control", "treatment"), each = 2)))
+rownames(sampleTable) <- colnames(txi.kallisto$counts)
+
+dds <- DESeqDataSetFromTximport(txi.kallisto,
+                                sampleTable, 
+                                ~condition)
+```
+
+```{r}
+dds <- DESeq(dds)
+```
+
+```{r}
+res <- results(dds)
+head(res)
+
+```
