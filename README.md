@@ -11,9 +11,9 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 06 [R functions and R packages from CRAN and BioConductor](lab06/class06.pdf)
 
-- Class 07 [Introduction to machine learning for Bioinformatics](class7.pdf)
+- Class 07 [Introduction to machine learning for Bioinformatics](Class07/class7.pdf)
 
-- Class 08 [Unsupervised Learning Mini-Project]
+- Class 08 [Unsupervised Learning Mini-Project](class08/class-08.qmd) 
 
 - Class 09 [Candy Mini-Project]
 
