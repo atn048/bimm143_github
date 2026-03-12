@@ -5,28 +5,37 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 *Introductory material*
 
-- Class 04 [Intro to R](class04/class04.qmd)
-  
-- Class 05 [Data viz with ggplot](lab05)
+- Class 04 [Intro to R]
 
-- Class 06 [
+- Class 05 [Data viz with ggplot](lab05/"class 05.qmd")
 
-- Class 07
+- Class 06 [R functions and R packages from CRAN and BioConductor]
 
-- Class 08
+- Class 07 [Introduction to machine learning for Bioinformatics]
 
-- Class 09
+- Class 08 [Unsupervised Learning Mini-Project]
 
-- Class 10
+- Class 09 [Candy Mini-Project]
 
-- Class 11
+- Class 10 [Structural Bioinformatics (pt1)]
 
-- Class 12
+- Class 11 [Structural Bioinformatics (pt2. Focus on new AlphaFold2)]
 
-- Class 13
+- Class 12 [Genome informatics]
 
-- Class 14
+- Class 13 [Transcriptomics and the analysis of RNA-Seq data]
 
+- Class 14 [RNA-Seq analysis mini-project]
+
+- Class 15 [Hands-on with Git and Github]
+
+- Class 16 [Essential UNIX for bioinformatics]
+
+- Class 17 [Analyzing sequencing data in the cloud]
+
+- Class 18 [Mini Project: Investigating Pertussis Resurgence]
+
+- Class 19 [Mini Project: Cancer Mutation Analysis]
 - Class 15
 
 - Class 16 
