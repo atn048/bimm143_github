@@ -15,7 +15,7 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 08 [Unsupervised Learning Mini-Project](class%08/class%08.qmd) 
 
-- Class 09 [Candy Mini-Project]
+- Class 09 [Candy Mini-Project](Class09/class-09.pdf)
 
 - Class 10 [Structural Bioinformatics (pt1)]
 
