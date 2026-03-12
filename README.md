@@ -4,6 +4,11 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 ## Index of Material
 
 *Introductory material*
+- Class 01
+  
+- Class 02
+  
+- Class 03
 
 - Class 04 [Intro to R]
 
