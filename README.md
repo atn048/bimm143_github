@@ -7,11 +7,11 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 04 [Intro to R]
 
-- Class 05 [Data viz with ggplot](lab05/"class 05.qmd")
+- Class 05 [Data viz with ggplot](lab05/class05.pdf)
 
-- Class 06 [R functions and R packages from CRAN and BioConductor]
+- Class 06 [R functions and R packages from CRAN and BioConductor](lab06/class06.pdf)
 
-- Class 07 [Introduction to machine learning for Bioinformatics]
+- Class 07 [Introduction to machine learning for Bioinformatics](class7.pdf)
 
 - Class 08 [Unsupervised Learning Mini-Project]
 
