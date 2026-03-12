@@ -13,7 +13,7 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 07 [Introduction to machine learning for Bioinformatics](Class07/class7.pdf)
 
-- Class 08 [Unsupervised Learning Mini-Project](class\ 08\class\ 08\.qmd) 
+- Class 08 [Unsupervised Learning Mini-Project](class08/class08.qmd) 
 
 - Class 09 [Candy Mini-Project](Class09/class-09.pdf)
 
@@ -33,6 +33,6 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 17 [Analyzing sequencing data in the cloud](class17/class17.pdf)
 
-- Class 18 [Mini Project: Investigating Pertussis Resurgence]
+- Class 18 [Mini Project: Investigating Pertussis Resurgence](class18/class_18.pdf)
 
 - Class 19 [Mini Project: Cancer Mutation Analysis]
