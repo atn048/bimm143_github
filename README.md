@@ -26,7 +26,7 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 11 [Structural Bioinformatics (pt2. Focus on new AlphaFold2)](Class-11.pdf)
 
-- Class 12 [Genome informatics]
+- Class 12 [Genome informatics](class12.pdf)
 
 - Class 13 [Transcriptomics and the analysis of RNA-Seq data](Class13/class-13.pdf)
 
@@ -40,5 +40,5 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 18 [Mini Project: Investigating Pertussis Resurgence](class18/class_18.pdf)
 
-- Class 19 [Mini Project: Cancer Mutation Analysis]
+- Class 19 [Mini Project: Cancer Mutation Analysis](class19.pdf)
   
