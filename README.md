@@ -36,7 +36,7 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 16 [Essential UNIX for bioinformatics](class_16)
 
-- Class 17 [Analyzing sequencing data in the cloud](class17/class17.pdf)
+- Class 17 [Analyzing sequencing data in the cloud](class17.pdf)
 
 - Class 18 [Mini Project: Investigating Pertussis Resurgence](class18/class_18.pdf)
 
