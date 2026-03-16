@@ -10,7 +10,7 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
   
 - Class 03 [Advanced sequence alignment and database searching](class03.pdf)
 
-- Class 04 [Intro to R](class04.pdf)
+- Class 04 [Intro to R](class04/class04.pdf)
 
 - Class 05 [Data viz with ggplot](lab05/class05.pdf)
 
@@ -18,13 +18,13 @@ My classwork for [BIMM143](https://bioboot.github.io/bimm143_W26/schedule/#1) at
 
 - Class 07 [Introduction to machine learning for Bioinformatics](Class07/class7.pdf)
 
-- Class 08 [Unsupervised Learning Mini-Project](class08/class08.qmd) 
+- Class 08 [Unsupervised Learning Mini-Project](class08/class-08.pdf) 
 
 - Class 09 [Candy Mini-Project](Class09/class-09.pdf)
 
-- Class 10 [Structural Bioinformatics (pt1)](class-10.pdf)
+- Class 10 [Structural Bioinformatics (pt1)](class10/class-10.pdf)
 
-- Class 11 [Structural Bioinformatics (pt2. Focus on new AlphaFold2)](Class-11.pdf)
+- Class 11 [Structural Bioinformatics (pt2. Focus on new AlphaFold2)](class11/Class-11.pdf)
 
 - Class 12 [Genome informatics](class12.pdf)
 
